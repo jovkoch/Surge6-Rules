@@ -9,4 +9,4 @@
 
 ## Validation
 
-Check every line against an allowlist of rule types, validate IP CIDR notation, and scan for duplicates across files. A GitHub Actions workflow for this check is planned.
+Run `python3 scripts/validate_rules.py` locally. The same check runs in GitHub Actions (`.github/workflows/validate-rules.yml`) on every push and pull request: it checks rule types against an allowlist, validates IP CIDR notation, rejects policy columns in `.list` files, scans for duplicates across files, and confirms every RULE-SET URL in `surge.conf` points to an existing file.

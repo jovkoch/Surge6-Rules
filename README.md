@@ -1,10 +1,24 @@
 # Surge6-Rules
 
-A traffic-routing (split tunneling) repository for **Surge 6 on iOS**: self-maintained rule sets, a ready-to-use profile template, and a module template.
+[![GitHub stars](https://img.shields.io/github/stars/jovkoch/Surge6-Rules?style=social)](https://github.com/jovkoch/Surge6-Rules/stargazers)
+[![License: MIT](https://img.shields.io/github/license/jovkoch/Surge6-Rules)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/jovkoch/Surge6-Rules)](https://github.com/jovkoch/Surge6-Rules/commits/main)
+[![Validate rules](https://github.com/jovkoch/Surge6-Rules/actions/workflows/validate-rules.yml/badge.svg)](https://github.com/jovkoch/Surge6-Rules/actions/workflows/validate-rules.yml)
 
-The goal is simple: China traffic goes direct, overseas traffic goes through a proxy, ads are blocked, and AI / streaming services get their own policy groups — with a clear rule order that stays easy to maintain.
+**English** | [简体中文](README.zh-CN.md)
 
-> This repository contains rules and a profile template only. **It does not include or provide any proxy nodes or subscriptions.** Add your own nodes.
+> **中文简介**：一套面向 Surge 6（iOS）的分流规则仓库——国内直连、海外代理、广告拦截，AI 与流媒体单独分组。包含可直接套用的配置模板和 15 个自维护规则集（356 条规则），不包含任何节点或机场订阅。点下方链接可一键导入 Surge。
+
+**One-click import (iOS, with Surge installed):**
+[surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge.conf](surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge.conf)
+
+Or copy the raw profile URL manually:
+
+```
+https://raw.githubusercontent.com/jovkoch/Surge6-Rules/main/surge.conf
+```
+
+> If this project helps you, please consider giving it a ⭐ — it helps other Surge users find it, and it is the best signal that the rules are worth maintaining. Found a domain routed the wrong way? [Open an issue](https://github.com/jovkoch/Surge6-Rules/issues/new/choose) or see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Quick Start
 
@@ -82,6 +96,10 @@ Surge6-Rules/
 - Before adding a domain, pick the right category: China direct traffic goes to `China.list`, overseas services go to the matching service set, and ads go to `Reject.list`.
 - Do not duplicate a domain across sets; the earlier set wins. `YouTube`, `Netflix`, and `Telegram-IP` are intentionally split out of the larger categories.
 - This is a curated starter edition, not a full-size database. For 100k-scale coverage, you can reference upstream rule sets such as blackmatrix7 or Sukka alongside these self-maintained sets — just keep the order above.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.1.0**.
 
 ## Disclaimer
 
