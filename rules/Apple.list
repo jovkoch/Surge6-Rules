@@ -1,0 +1,23 @@
+# NAME: Apple
+# DESC: Apple services. Routed to DIRECT by default in the template; change the policy in surge.conf if you prefer a proxy.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,mac.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,testflight.apple.com
+DOMAIN,mesu.apple.com
+DOMAIN,captive.apple.com
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,gc.apple.com
+DOMAIN-SUFFIX,beta.apple.com

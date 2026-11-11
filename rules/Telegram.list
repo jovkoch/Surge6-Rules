@@ -1,0 +1,10 @@
+# NAME: Telegram - Domain
+# DESC: Telegram domains. Telegram IP ranges live in Telegram-IP.list.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telesco.pe
+DOMAIN-SUFFIX,telegram.dog

@@ -1,0 +1,11 @@
+# NAME: YouTube
+# DESC: YouTube domains and video CDN.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN,youtu.be
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,yt3.ggpht.com
+DOMAIN-SUFFIX,music.youtube.com

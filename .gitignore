@@ -1,0 +1,8 @@
+.DS_Store
+*.local.conf
+*secret*
+*password*
+nodes.conf
+my-*.conf
+.idea/
+.vscode/

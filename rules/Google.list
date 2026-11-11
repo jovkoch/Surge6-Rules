@@ -1,0 +1,22 @@
+# NAME: Google
+# DESC: Core Google services. YouTube is a separate ruleset.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,googlemail.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,firebaseapp.com
+DOMAIN-SUFFIX,appspot.com
+DOMAIN-SUFFIX,blogspot.com
+DOMAIN-SUFFIX,chromium.org
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,g.co
+DOMAIN,scholar.google.com
+DOMAIN,drive.google.com
+DOMAIN,docs.google.com
+DOMAIN,maps.google.com

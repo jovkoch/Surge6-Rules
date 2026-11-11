@@ -1,0 +1,39 @@
+# NAME: Social
+# DESC: Overseas social and community services: X, Instagram, Facebook, Reddit, Discord, international TikTok, and more.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,twitter.com
+DOMAIN,x.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbcdn.com
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redd.it
+DOMAIN-SUFFIX,redditmedia.com
+DOMAIN-SUFFIX,redditstatic.com
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,pinterest.com
+DOMAIN-SUFFIX,pinimg.com
+DOMAIN-SUFFIX,snapchat.com
+DOMAIN-SUFFIX,threads.net
+DOMAIN-SUFFIX,bsky.app
+DOMAIN-SUFFIX,bsky.social
+DOMAIN-SUFFIX,mastodon.social
+DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,substack.com
+DOMAIN-SUFFIX,quora.com

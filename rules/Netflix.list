@@ -1,0 +1,12 @@
+# NAME: Netflix
+# DESC: Netflix domains, video CDN, and fast.com speed test.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN,fast.com

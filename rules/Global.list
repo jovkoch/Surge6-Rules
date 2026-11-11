@@ -1,0 +1,40 @@
+# NAME: Global
+# DESC: Other popular overseas services for proxy routing. Anything not listed here is still covered by FINAL in the template.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikimedia.org
+DOMAIN-SUFFIX,amazon.com
+DOMAIN-SUFFIX,amazon.co.jp
+DOMAIN-SUFFIX,amazon.co.uk
+DOMAIN-SUFFIX,ebay.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropboxusercontent.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,notion.site
+DOMAIN-SUFFIX,figma.com
+DOMAIN-SUFFIX,slack.com
+DOMAIN-SUFFIX,zoom.us
+DOMAIN-SUFFIX,airbnb.com
+DOMAIN-SUFFIX,booking.com
+DOMAIN-SUFFIX,expedia.com
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,bbc.com
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,cnn.com
+DOMAIN-SUFFIX,reuters.com
+DOMAIN-SUFFIX,bloomberg.com
+DOMAIN-SUFFIX,wsj.com
+DOMAIN-SUFFIX,archive.org
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,startpage.com
+DOMAIN-SUFFIX,proton.me
+DOMAIN-SUFFIX,protonmail.com
+DOMAIN-SUFFIX,signal.org
+DOMAIN-SUFFIX,steampowered.com
+DOMAIN-SUFFIX,steamcommunity.com
+DOMAIN-SUFFIX,epicgames.com
+DOMAIN-SUFFIX,playstation.com
+DOMAIN-SUFFIX,nintendo.com

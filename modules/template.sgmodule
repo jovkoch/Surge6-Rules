@@ -1,0 +1,14 @@
+#!name=Template Module
+#!desc=Empty template: copy this file, rename it, then write your own [Rule] / [URL Rewrite] / [Script] / [MITM] sections
+#!category=Template
+#!author=jovkoch
+#!homepage=https://github.com/jovkoch/Surge6-Rules
+
+[Rule]
+# DOMAIN-SUFFIX,example.com,DIRECT
+
+[URL Rewrite]
+# ^https://example.com/old https://example.com/new 302
+
+[MITM]
+# hostname = %APPEND% example.com

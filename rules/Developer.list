@@ -1,0 +1,25 @@
+# NAME: Developer
+# DESC: Developer services: GitHub, GitLab, npm, Docker, Stack Overflow, and more.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,bitbucket.org
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,yarnpkg.com
+DOMAIN-SUFFIX,pypi.org
+DOMAIN-SUFFIX,python.org
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,stackexchange.com
+DOMAIN-SUFFIX,vercel.app
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,netlify.app
+DOMAIN-SUFFIX,netlify.com
+DOMAIN-SUFFIX,cloudflare.com

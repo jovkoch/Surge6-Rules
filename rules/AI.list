@@ -1,0 +1,32 @@
+# NAME: AI
+# DESC: Overseas AI services: OpenAI, Claude, Gemini entry points, Perplexity, xAI, and more.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN,grok.com
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,midjourney.com
+DOMAIN-SUFFIX,character.ai
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,mistral.ai
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,together.ai
+DOMAIN,gemini.google.com
+DOMAIN,aistudio.google.com
+DOMAIN,ai.google.dev
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN,copilot.microsoft.com
+DOMAIN-SUFFIX,copilot.com

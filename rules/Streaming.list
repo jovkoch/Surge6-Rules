@@ -1,0 +1,28 @@
+# NAME: Streaming
+# DESC: Overseas streaming services. YouTube and Netflix are separate rulesets.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ruleset.html
+
+DOMAIN-SUFFIX,disneyplus.com
+DOMAIN-SUFFIX,disney-plus.net
+DOMAIN-SUFFIX,bamgrid.com
+DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,max.com
+DOMAIN-SUFFIX,hulu.com
+DOMAIN-SUFFIX,hulustream.com
+DOMAIN-SUFFIX,primevideo.com
+DOMAIN-SUFFIX,amazonvideo.com
+DOMAIN-SUFFIX,peacocktv.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,twitch.tv
+DOMAIN-SUFFIX,ttvnw.net
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,dazn.com
+DOMAIN-SUFFIX,crunchyroll.com
+DOMAIN-SUFFIX,funimation.com
+DOMAIN-SUFFIX,vimeo.com
+DOMAIN-SUFFIX,dailymotion.com
+DOMAIN-SUFFIX,soundcloud.com
