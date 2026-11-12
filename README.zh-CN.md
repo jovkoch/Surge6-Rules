@@ -15,6 +15,16 @@
 
 > 如果这个项目对你有帮助，欢迎点一个 ⭐，能让更多 Surge 用户找到它，也是维护规则最好的动力。发现某个域名走错线路？欢迎提 [Issue](https://github.com/jovkoch/Surge6-Rules/issues/new/choose)，或看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
+## VLESS
+
+Surge 6 已原生支持 VLESS（iOS 6.0.0+ / Mac 6.12.0+），包括 REALITY 和 XTLS Vision，见[官方 VLESS 文档](https://manual.nssurge.com/policies/vless.html)。`surge.conf` 的 `[Proxy]` 段里有注释版 VLESS 示例——REALITY + Vision、WebSocket + TLS、RAW + TLS + Vision，只有占位符，请填自己的服务器、UUID、SNI 和 REALITY 公钥。XHTTP、HTTPUpgrade、mKCP 和 VLESS Encryption 不支持。
+
+## 马来西亚 / 海外版
+
+如果你在**中国境外**使用 Surge（例如在马来西亚），请用 `surge-malaysia.conf` 而不是 `surge.conf`。分流方向是反过来的：国内服务走回国节点（服务器必须在中国境内，海外节点解不了国内 App 的地区限制），海外服务直连，`FINAL` 也是直连。一键导入：
+
+[surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge-malaysia.conf](surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge-malaysia.conf)
+
 ## 快速开始
 
 ### 一键导入（iOS，已安装 Surge）
@@ -83,7 +93,8 @@ Surge 从上到下匹配，**首个命中生效**。本仓库遵循：
 
 ```
 Surge6-Rules/
-├── surge.conf          # Surge 6 配置模板（填入自己的节点后使用）
+├── surge.conf          # Surge 6 配置模板（在中国境内使用，填入自己的节点后使用）
+├── surge-malaysia.conf # Surge 6 配置模板（在中国境外使用，例如马来西亚，填入自己的节点后使用）
 ├── rules/              # 15 个自维护 RULE-SET (.list，无策略列)
 ├── modules/            # .sgmodule 模块模板与说明
 ├── scripts/            # 规则校验脚本（GitHub Actions 同步运行）
@@ -94,7 +105,7 @@ Surge6-Rules/
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.1.0**。
+见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.2.0**。
 
 ## 免责声明
 

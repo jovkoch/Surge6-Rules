@@ -20,6 +20,16 @@ https://raw.githubusercontent.com/jovkoch/Surge6-Rules/main/surge.conf
 
 > If this project helps you, please consider giving it a ⭐ — it helps other Surge users find it, and it is the best signal that the rules are worth maintaining. Found a domain routed the wrong way? [Open an issue](https://github.com/jovkoch/Surge6-Rules/issues/new/choose) or see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## VLESS
+
+Surge 6 supports VLESS natively (iOS 6.0.0+ / Mac 6.12.0+), including REALITY and the XTLS Vision flow. See the [official VLESS documentation](https://manual.nssurge.com/policies/vless.html). The template's `[Proxy]` section in `surge.conf` includes commented VLESS examples — REALITY + Vision, WebSocket + TLS, and RAW + TLS + Vision — with placeholders only. Fill in your own server, UUID, SNI, and REALITY public key. XHTTP, HTTPUpgrade, mKCP, and VLESS Encryption are not supported.
+
+## Malaysia / Abroad
+
+If you are using Surge **outside mainland China** (for example in Malaysia), use `surge-malaysia.conf` instead of `surge.conf`. The routing is inverted: China services go through a China-return node (a node located in mainland China — an overseas node cannot unblock geo-restricted China services), while overseas services go direct and `FINAL` is direct. One-click import:
+
+[surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge-malaysia.conf](surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge-malaysia.conf)
+
 ## Quick Start
 
 ### Option 1: Full profile (recommended for new users)
@@ -82,7 +92,8 @@ Surge matches rules from top to bottom; **the first match wins**. This repositor
 
 ```
 Surge6-Rules/
-├── surge.conf          # Surge 6 profile template (add your own nodes before use)
+├── surge.conf          # Surge 6 profile template for use in China (add your own nodes before use)
+├── surge-malaysia.conf # Surge 6 profile template for use outside China, e.g. Malaysia (add your own nodes before use)
 ├── rules/              # 15 self-maintained RULE-SET files (.list, no policy column)
 ├── modules/            # .sgmodule template and notes
 ├── docs/               # Maintenance guide
@@ -99,7 +110,7 @@ Surge6-Rules/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.1.0**.
+See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.2.0**.
 
 ## Disclaimer
 
