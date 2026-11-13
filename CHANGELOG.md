@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-11-13
+
+### Removed
+
+- `rules/Social.list` is retired (35 rules: X, Instagram, Facebook, Reddit, Discord, international TikTok, etc.). Those domains are no longer matched to the `🌍 Global` group and now fall through to `FINAL` instead.
+- `rules/Netflix.list` is retired (8 rules: Netflix domains, video CDN, and the `fast.com` speed test). Those domains are no longer matched to the `📺 Streaming` group and now fall through to `FINAL` instead. Rule sets: 15 -> 13, total rules: 351 -> 308.
+
 ## [1.4.1] - 2026-11-13
 
 ### Fixed

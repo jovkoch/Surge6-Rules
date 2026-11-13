@@ -7,7 +7,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-> **中文简介**：一套面向 Surge 6（iOS）的分流规则仓库——国内直连、海外代理、广告拦截，AI 与流媒体单独分组。包含可直接套用的配置模板和 15 个自维护规则集（356 条规则），不包含任何节点或机场订阅。点下方链接可一键导入 Surge。
+> **中文简介**：一套面向 Surge 6（iOS）的分流规则仓库——国内直连、海外代理、广告拦截，AI 与流媒体单独分组。包含可直接套用的配置模板和 13 个自维护规则集（308 条规则），不包含任何节点或机场订阅。点下方链接可一键导入 Surge。
 
 **One-click import (iOS, with Surge installed):**
 [surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge.conf](surge:///install-config?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjovkoch%2FSurge6-Rules%2Fmain%2Fsurge.conf)
@@ -63,11 +63,9 @@ FINAL,Proxy,dns-failed
 | `rules/Reject.list` | Ad and tracker blocking (starter edition) | `REJECT` |
 | `rules/AI.list` | OpenAI / ChatGPT, Claude, Gemini entry points, Perplexity, xAI, etc. | `🤖 AI` |
 | `rules/YouTube.list` | YouTube and its video CDN | `📺 Streaming` |
-| `rules/Netflix.list` | Netflix and the `fast.com` speed test | `📺 Streaming` |
 | `rules/Streaming.list` | Disney+, Max, Hulu, Twitch, Spotify, etc. | `📺 Streaming` |
 | `rules/Telegram.list` | Telegram domains | `💬 Telegram` |
 | `rules/Telegram-ASN.list` | Telegram autonomous systems (AS62041, AS62014, AS59930, AS44907, AS211157 — an IP set, place it after all domain sets) | `💬 Telegram` |
-| `rules/Social.list` | X, Instagram, Facebook, Reddit, Discord, international TikTok, etc. | `🌍 Global` |
 | `rules/Google.list` | Core Google services (YouTube excluded) | `🌍 Global` |
 | `rules/Microsoft.list` | Microsoft, Office, OneDrive, LinkedIn, etc. | `🌍 Global` |
 | `rules/Developer.list` | GitHub, GitLab, npm, Docker, etc. | `🌍 Global` |
@@ -83,7 +81,7 @@ Raw URL pattern: `https://raw.githubusercontent.com/jovkoch/Surge6-Rules/main/ru
 Surge matches rules from top to bottom; **the first match wins**. This repository follows this order:
 
 1. `Reject` blocking first
-2. Domain rule sets: AI -> Streaming -> Telegram -> Social -> Google / Microsoft / Developer -> Apple -> China
+2. Domain rule sets: AI -> Streaming -> Telegram -> Google / Microsoft / Developer -> Apple -> China
 3. IP rule sets: Telegram-ASN, Private, and the built-in `LAN` set — these must stay after all domain sets to avoid unnecessary DNS resolution
 4. China fallback: `DOMAIN-SUFFIX,cn`, then `GEOIP,CN`
 5. `FINAL` as the last catch-all
@@ -105,7 +103,7 @@ The Subscription panel needs your own subscription URL, entered in the module's 
 Surge6-Rules/
 ├── surge.conf          # Surge 6 profile template for use in China (add your own nodes before use)
 ├── surge-malaysia.conf # Surge 6 profile template for use outside China, e.g. Malaysia (add your own nodes before use)
-├── rules/              # 15 self-maintained RULE-SET files (.list, no policy column)
+├── rules/              # 13 self-maintained RULE-SET files (.list, no policy column)
 ├── modules/            # .sgmodule template, notes, and panel modules
 ├── docs/               # Maintenance guide
 ├── LICENSE
@@ -116,12 +114,12 @@ Surge6-Rules/
 
 - Each `.list` file is a `RULE-SET` file: one rule per line, **with no policy**, and comments start with `#`. See the [Surge manual - Rule Sets](https://manual.nssurge.com/rules/ruleset.html).
 - Before adding a domain, pick the right category: China direct traffic goes to `China.list`, overseas services go to the matching service set, and ads go to `Reject.list`.
-- Do not duplicate a domain across sets; the earlier set wins. `YouTube`, `Netflix`, and `Telegram-ASN` are intentionally split out of the larger categories.
+- Do not duplicate a domain across sets; the earlier set wins. `YouTube` and `Telegram-ASN` are intentionally split out of the larger categories.
 - This is a curated starter edition, not a full-size database. For 100k-scale coverage, you can reference upstream rule sets such as blackmatrix7 or Sukka alongside these self-maintained sets — just keep the order above.
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.4.1**.
+See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.5.0**.
 
 ## Disclaimer
 
