@@ -47,6 +47,10 @@ def main() -> int:
             for extra in parts[2:]:
                 if extra not in ALLOWED_PARAMS:
                     errors.append(f"{where}: unexpected parameter/policy '{extra}' in '{line}'")
+            if rtype == "IP-ASN":
+                asn = parts[1][2:] if parts[1].upper().startswith("AS") else parts[1]
+                if not asn.isdigit():
+                    errors.append(f"{where}: invalid ASN '{parts[1]}'")
             if rtype in ("IP-CIDR", "IP-CIDR6"):
                 try:
                     ipaddress.ip_network(parts[1])

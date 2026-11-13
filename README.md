@@ -66,7 +66,7 @@ FINAL,Proxy,dns-failed
 | `rules/Netflix.list` | Netflix and the `fast.com` speed test | `📺 Streaming` |
 | `rules/Streaming.list` | Disney+, Max, Hulu, Twitch, Spotify, etc. | `📺 Streaming` |
 | `rules/Telegram.list` | Telegram domains | `💬 Telegram` |
-| `rules/Telegram-IP.list` | Telegram IP ranges (an IP set — place it after all domain sets) | `💬 Telegram` |
+| `rules/Telegram-ASN.list` | Telegram autonomous systems (AS62041, AS62014, AS59930, AS44907, AS211157 — an IP set, place it after all domain sets) | `💬 Telegram` |
 | `rules/Social.list` | X, Instagram, Facebook, Reddit, Discord, international TikTok, etc. | `🌍 Global` |
 | `rules/Google.list` | Core Google services (YouTube excluded) | `🌍 Global` |
 | `rules/Microsoft.list` | Microsoft, Office, OneDrive, LinkedIn, etc. | `🌍 Global` |
@@ -84,7 +84,7 @@ Surge matches rules from top to bottom; **the first match wins**. This repositor
 
 1. `Reject` blocking first
 2. Domain rule sets: AI -> Streaming -> Telegram -> Social -> Google / Microsoft / Developer -> Apple -> China
-3. IP rule sets: Telegram-IP, Private, and the built-in `LAN` set — these must stay after all domain sets to avoid unnecessary DNS resolution
+3. IP rule sets: Telegram-ASN, Private, and the built-in `LAN` set — these must stay after all domain sets to avoid unnecessary DNS resolution
 4. China fallback: `DOMAIN-SUFFIX,cn`, then `GEOIP,CN`
 5. `FINAL` as the last catch-all
 
@@ -105,12 +105,12 @@ Surge6-Rules/
 
 - Each `.list` file is a `RULE-SET` file: one rule per line, **with no policy**, and comments start with `#`. See the [Surge manual - Rule Sets](https://manual.nssurge.com/rules/ruleset.html).
 - Before adding a domain, pick the right category: China direct traffic goes to `China.list`, overseas services go to the matching service set, and ads go to `Reject.list`.
-- Do not duplicate a domain across sets; the earlier set wins. `YouTube`, `Netflix`, and `Telegram-IP` are intentionally split out of the larger categories.
+- Do not duplicate a domain across sets; the earlier set wins. `YouTube`, `Netflix`, and `Telegram-ASN` are intentionally split out of the larger categories.
 - This is a curated starter edition, not a full-size database. For 100k-scale coverage, you can reference upstream rule sets such as blackmatrix7 or Sukka alongside these self-maintained sets — just keep the order above.
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.2.0**.
+See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.3.0**.
 
 ## Disclaimer
 

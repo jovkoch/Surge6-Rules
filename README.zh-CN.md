@@ -67,7 +67,7 @@ FINAL,Proxy,dns-failed
 | `rules/Netflix.list` | Netflix 与测速 `fast.com` | `📺 Streaming` |
 | `rules/Streaming.list` | Disney+、Max、Hulu、Twitch、Spotify 等 | `📺 Streaming` |
 | `rules/Telegram.list` | Telegram 域名 | `💬 Telegram` |
-| `rules/Telegram-IP.list` | Telegram IP 段（IP 集，放域名集之后） | `💬 Telegram` |
+| `rules/Telegram-ASN.list` | Telegram 自治系统 AS62041、AS62014、AS59930、AS44907、AS211157（IP 集，放域名集之后） | `💬 Telegram` |
 | `rules/Social.list` | X、Instagram、Facebook、Reddit、Discord、TikTok 国际版等 | `🌍 Global` |
 | `rules/Google.list` | Google 基础服务（不含 YouTube） | `🌍 Global` |
 | `rules/Microsoft.list` | Microsoft / Office / OneDrive / LinkedIn 等 | `🌍 Global` |
@@ -85,7 +85,7 @@ Surge 从上到下匹配，**首个命中生效**。本仓库遵循：
 
 1. `Reject` 拦截优先
 2. 域名规则集：AI → 流媒体 → Telegram → 社交 → Google / 微软 / 开发者 → Apple → 国内
-3. IP 规则集：Telegram-IP、Private、内置 `LAN`——必须在域名集之后，避免不必要的 DNS 解析
+3. IP 规则集：Telegram-ASN、Private、内置 `LAN`——必须在域名集之后，避免不必要的 DNS 解析
 4. 国内兜底：`DOMAIN-SUFFIX,cn` → `GEOIP,CN`
 5. `FINAL` 最后兜底
 
@@ -105,7 +105,7 @@ Surge6-Rules/
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.2.0**。
+见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.3.0**。
 
 ## 免责声明
 

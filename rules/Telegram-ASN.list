@@ -1,0 +1,14 @@
+# NAME: Telegram - ASN
+# DESC: Telegram autonomous systems. Matches every IP Telegram announces under
+#   its own ASNs, so new Telegram IPs are covered without maintaining CIDR lists.
+#   ASNs verified against BGP data (Telegram Messenger Inc):
+#   AS62041 (Telegram Messenger EUR), AS62014 (APAC), AS59930 (NA),
+#   AS44907 (Telegram Messenger CDN), AS211157 (Telegram Messenger Inc).
+#   Reference this after all domain rulesets.
+# NOTE: RULE-SET file for Surge 6 - one rule per line, without a policy. See https://manual.nssurge.com/rules/ip.html
+
+IP-ASN,62041,no-resolve
+IP-ASN,62014,no-resolve
+IP-ASN,59930,no-resolve
+IP-ASN,44907,no-resolve
+IP-ASN,211157,no-resolve
