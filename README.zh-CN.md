@@ -65,7 +65,6 @@ FINAL,Proxy,dns-failed
 | `rules/AI.list` | OpenAI / ChatGPT、Claude、Gemini 入口、Perplexity、xAI 等 | `🤖 AI` |
 | `rules/YouTube.list` | YouTube 与视频 CDN | `📺 Streaming` |
 | `rules/Streaming.list` | Disney+、Max、Hulu、Twitch、Spotify 等 | `📺 Streaming` |
-| `rules/Telegram.list` | Telegram 域名 | `💬 Telegram` |
 | `rules/Telegram-ASN.list` | Telegram 自治系统 AS62041、AS62014、AS59930、AS44907、AS211157（IP 集，放域名集之后） | `💬 Telegram` |
 | `rules/Google.list` | Google 基础服务（不含 YouTube） | `🌍 Global` |
 | `rules/Microsoft.list` | Microsoft / Office / OneDrive / LinkedIn 等 | `🌍 Global` |
@@ -82,7 +81,7 @@ FINAL,Proxy,dns-failed
 Surge 从上到下匹配，**首个命中生效**。本仓库遵循：
 
 1. `Reject` 拦截优先
-2. 域名规则集：AI → 流媒体 → Telegram → Google / 微软 / 开发者 → Apple → 国内
+2. 域名规则集：AI → 流媒体 → Google / 微软 / 开发者 → Apple → 国内
 3. IP 规则集：Telegram-ASN、Private、内置 `LAN`——必须在域名集之后，避免不必要的 DNS 解析
 4. 国内兜底：`DOMAIN-SUFFIX,cn` → `GEOIP,CN`
 5. `FINAL` 最后兜底
@@ -104,7 +103,7 @@ Surge 从上到下匹配，**首个命中生效**。本仓库遵循：
 Surge6-Rules/
 ├── surge.conf          # Surge 6 配置模板（在中国境内使用，填入自己的节点后使用）
 ├── surge-malaysia.conf # Surge 6 配置模板（在中国境外使用，例如马来西亚，填入自己的节点后使用）
-├── rules/              # 13 个自维护 RULE-SET (.list，无策略列)
+├── rules/              # 12 个自维护 RULE-SET (.list，无策略列)
 ├── modules/            # .sgmodule 模块模板、说明与面板模块
 ├── scripts/            # 规则校验脚本（GitHub Actions 同步运行）
 ├── docs/               # 维护说明
@@ -114,7 +113,7 @@ Surge6-Rules/
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.5.0**。
+见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.6.0**。
 
 ## 免责声明
 

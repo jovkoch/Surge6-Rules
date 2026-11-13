@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2026-11-13
+
+### Removed
+
+- `rules/Telegram.list` is retired (6 domain rules: `telegram.org`, `telegram.me`, `t.me`, `telegra.ph`, `telesco.pe`, `telegram.dog`). Those domains are no longer matched to the `💬 Telegram` group and now fall through to `FINAL`. Telegram IP matching is unchanged and still uses `rules/Telegram-ASN.list` (5 `IP-ASN` rules). Rule sets: 13 -> 12, total rules: 310 -> 304.
+
+## [1.5.1] - 2026-11-13
+
+### Added
+
+- `DOMAIN-SUFFIX,mimecast.com` and `DOMAIN-SUFFIX,duosecurity.com` to `rules/Microsoft.list`. (`login.microsoftonline.com` was intentionally not added: `DOMAIN-SUFFIX,microsoftonline.com` already covers it.) Total rules: 308 -> 310.
+
 ## [1.5.0] - 2026-11-13
 
 ### Removed
