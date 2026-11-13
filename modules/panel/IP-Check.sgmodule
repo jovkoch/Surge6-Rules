@@ -1,0 +1,11 @@
+#!name=IP Check Panel
+#!desc=Information panel showing the current outbound IP, location and ISP (via ipinfo.io, no key required). Refreshes hourly.
+#!category=Panel
+#!author=jovkoch
+#!homepage=https://github.com/jovkoch/Surge6-Rules
+
+[Panel]
+IP Check = title="IP Check",content="Tap refresh to check the current IP.",style=info,script-name=ip-check,update-interval=3600
+
+[Script]
+ip-check = type=generic,script-path=https://raw.githubusercontent.com/jovkoch/Surge6-Rules/main/modules/panel/ip-check.js

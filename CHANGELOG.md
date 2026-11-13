@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-11-13
+
+### Added
+
+- Information panels under `modules/panel/`: **IP Check** (`IP-Check.sgmodule` + `ip-check.js`, current outbound IP / location / ISP via ipinfo.io, no key required) and **Subscription Info** (`Sub-Info.sgmodule` + `sub-info.js`, traffic used / remaining and expiry date from the `subscription-userinfo` header). Both refresh hourly and follow the official Information Panel format (`[Panel]` + generic script). The subscription URL is entered in the module settings in Surge and stored on the device only — it is never committed to this repository.
+
 ## [1.3.0] - 2026-11-13
 
 ### Changed

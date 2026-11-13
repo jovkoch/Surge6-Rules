@@ -89,6 +89,17 @@ Surge 从上到下匹配，**首个命中生效**。本仓库遵循：
 4. 国内兜底：`DOMAIN-SUFFIX,cn` → `GEOIP,CN`
 5. `FINAL` 最后兜底
 
+## 面板
+
+`modules/panel/` 里有两个信息面板，在 Surge 的“设置 → 模块”里安装对应的 `.sgmodule` 链接即可：
+
+| 面板 | 显示内容 |
+|---|---|
+| IP 查询（`panel/IP-Check.sgmodule`） | 当前出口 IP、归属地、运营商 |
+| 订阅流量（`panel/Sub-Info.sgmodule`） | 订阅已用 / 剩余流量、到期日 |
+
+订阅面板需要在安装后在模块设置里填你自己的订阅链接，只存在你的设备上，绝不会写进仓库。详见 [`modules/README.md`](modules/README.md)。
+
 ## 目录结构
 
 ```
@@ -96,7 +107,7 @@ Surge6-Rules/
 ├── surge.conf          # Surge 6 配置模板（在中国境内使用，填入自己的节点后使用）
 ├── surge-malaysia.conf # Surge 6 配置模板（在中国境外使用，例如马来西亚，填入自己的节点后使用）
 ├── rules/              # 15 个自维护 RULE-SET (.list，无策略列)
-├── modules/            # .sgmodule 模块模板与说明
+├── modules/            # .sgmodule 模块模板、说明与面板模块
 ├── scripts/            # 规则校验脚本（GitHub Actions 同步运行）
 ├── docs/               # 维护说明
 ├── LICENSE
@@ -105,7 +116,7 @@ Surge6-Rules/
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.3.0**。
+见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.4.0**。
 
 ## 免责声明
 

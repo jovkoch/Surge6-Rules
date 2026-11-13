@@ -1,0 +1,13 @@
+#!name=Subscription Info Panel
+#!desc=Information panel showing subscription traffic usage and expiry date, read from the standard subscription-userinfo header. Set your subscription URL in the module settings after installing; it stays on your device and is never stored in this repository.
+#!category=Panel
+#!author=jovkoch
+#!homepage=https://github.com/jovkoch/Surge6-Rules
+#!arguments=sub_url:
+#!arguments-desc=Your proxy subscription URL (the same link you use to import nodes). Surge stores it on your device only.
+
+[Panel]
+Subscription = title="Subscription",content="Fill in your subscription URL in the module settings, then refresh.",style=info,script-name=sub-info,update-interval=3600
+
+[Script]
+sub-info = type=generic,script-path=https://raw.githubusercontent.com/jovkoch/Surge6-Rules/main/modules/panel/sub-info.js,argument=url={{{sub_url}}}

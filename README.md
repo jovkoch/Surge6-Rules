@@ -88,6 +88,17 @@ Surge matches rules from top to bottom; **the first match wins**. This repositor
 4. China fallback: `DOMAIN-SUFFIX,cn`, then `GEOIP,CN`
 5. `FINAL` as the last catch-all
 
+## Panels
+
+Two information panels live under `modules/panel/` — install each `.sgmodule` URL in Surge under Settings -> Modules:
+
+| Panel | Shows |
+|---|---|
+| IP Check (`panel/IP-Check.sgmodule`) | Current outbound IP, location and ISP |
+| Subscription (`panel/Sub-Info.sgmodule`) | Subscription traffic used / remaining and expiry date |
+
+The Subscription panel needs your own subscription URL, entered in the module's settings in Surge after installing; it is stored on your device only and never in this repository. See [`modules/README.md`](modules/README.md) for details.
+
 ## Repository Layout
 
 ```
@@ -95,7 +106,7 @@ Surge6-Rules/
 ├── surge.conf          # Surge 6 profile template for use in China (add your own nodes before use)
 ├── surge-malaysia.conf # Surge 6 profile template for use outside China, e.g. Malaysia (add your own nodes before use)
 ├── rules/              # 15 self-maintained RULE-SET files (.list, no policy column)
-├── modules/            # .sgmodule template and notes
+├── modules/            # .sgmodule template, notes, and panel modules
 ├── docs/               # Maintenance guide
 ├── LICENSE
 └── README.md
@@ -110,7 +121,7 @@ Surge6-Rules/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.3.0**.
+See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.4.0**.
 
 ## Disclaimer
 
