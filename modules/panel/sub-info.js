@@ -9,14 +9,14 @@
 // Runs as a generic script backing the [Panel] entry in Sub-Info.sgmodule.
 // Official docs: https://manual.nssurge.com/tools/panel.html
 
-function getArg(name) {
-  var arg = (typeof $argument !== "undefined" && $argument) || "";
-  var parts = String(arg).split("&");
-  for (var i = 0; i < parts.length; i++) {
-    var kv = parts[i].split("=");
-    if (kv[0] === name) return decodeURIComponent((kv[1] || "").replace(/\+/g, " "));
-  }
-  return "";
+// The module passes the subscription URL as the script argument, verbatim.
+// Do NOT split it on "&" or URL-decode it: subscription links often contain
+// query parameters (e.g. ?token=xxx&flag=1), and decoding would corrupt them.
+// (Installs from v1.4.0 passed it as `url=<link>`; that form is still accepted.)
+function getSubUrl() {
+  var arg = (typeof $argument !== "undefined" && $argument) ? String($argument).trim() : "";
+  if (arg.indexOf("url=") === 0) arg = arg.slice(4);
+  return arg;
 }
 
 function formatBytes(bytes) {
@@ -39,7 +39,7 @@ function formatDate(unixSeconds) {
   return y + "-" + m + "-" + day;
 }
 
-var subUrl = getArg("url");
+var subUrl = getSubUrl();
 if (!subUrl) {
   $done({
     title: "Subscription",

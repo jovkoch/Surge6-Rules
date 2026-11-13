@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.1] - 2026-11-13
+
+### Fixed
+
+- Subscription Info panel: the subscription URL is now passed to the script verbatim instead of being parsed as a `url=` query parameter, so subscription links containing `&` (e.g. `?token=xxx&flag=1`) are no longer truncated at the first `&` and fetched incomplete. The old `url=<link>` form is still accepted.
+
 ## [1.4.0] - 2026-11-13
 
 ### Added
