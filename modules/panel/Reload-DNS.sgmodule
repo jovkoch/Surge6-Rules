@@ -1,0 +1,11 @@
+#!name=Profile Reload & DNS Flush Panel
+#!desc=Information panel: tap refresh to flush the DNS cache and reload the current profile (via Surge's own HTTP API, no setup required). No auto-refresh - it only runs when tapped.
+#!category=Panel
+#!author=jovkoch
+#!homepage=https://github.com/jovkoch/Surge6-Rules
+
+[Panel]
+Reload DNS = title="Profile Reload & DNS Flush",content="Tap refresh to flush the DNS cache and reload the profile.",style=info,script-name=reload-dns
+
+[Script]
+reload-dns = type=generic,script-path=https://raw.githubusercontent.com/jovkoch/Surge6-Rules/main/modules/panel/reload-dns.js

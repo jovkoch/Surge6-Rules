@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.0] - 2026-11-13
+
+### Added
+
+- Profile Reload & DNS Flush panel (`modules/panel/Reload-DNS.sgmodule` + `reload-dns.js`): tap the panel's refresh button to flush the DNS cache and reload the current profile, via Surge's own HTTP API (`$httpAPI`, `POST /v1/dns/flush` then `POST /v1/profiles/reload`, no authentication required per the official manual). No auto-refresh interval, so it never reloads the profile on its own; on failure the panel shows the error. No setup needed.
+
 ## [1.6.0] - 2026-11-13
 
 ### Removed

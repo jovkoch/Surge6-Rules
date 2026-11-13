@@ -87,12 +87,13 @@ Surge matches rules from top to bottom; **the first match wins**. This repositor
 
 ## Panels
 
-Two information panels live under `modules/panel/` — install each `.sgmodule` URL in Surge under Settings -> Modules:
+Three information panels live under `modules/panel/` — install each `.sgmodule` URL in Surge under Settings -> Modules:
 
 | Panel | Shows |
 |---|---|
 | IP Check (`panel/IP-Check.sgmodule`) | Current outbound IP, location and ISP |
 | Subscription (`panel/Sub-Info.sgmodule`) | Subscription traffic used / remaining and expiry date |
+| Reload DNS (`panel/Reload-DNS.sgmodule`) | Tap refresh to flush the DNS cache and reload the current profile |
 
 The Subscription panel needs your own subscription URL, entered in the module's settings in Surge after installing; it is stored on your device only and never in this repository. See [`modules/README.md`](modules/README.md) for details.
 
@@ -118,7 +119,7 @@ Surge6-Rules/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.6.0**.
+See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.7.0**.
 
 ## Disclaimer
 

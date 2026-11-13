@@ -88,12 +88,13 @@ Surge 从上到下匹配，**首个命中生效**。本仓库遵循：
 
 ## 面板
 
-`modules/panel/` 里有两个信息面板，在 Surge 的“设置 → 模块”里安装对应的 `.sgmodule` 链接即可：
+`modules/panel/` 里有三个信息面板，在 Surge 的“设置 → 模块”里安装对应的 `.sgmodule` 链接即可：
 
 | 面板 | 显示内容 |
 |---|---|
 | IP 查询（`panel/IP-Check.sgmodule`） | 当前出口 IP、归属地、运营商 |
 | 订阅流量（`panel/Sub-Info.sgmodule`） | 订阅已用 / 剩余流量、到期日 |
+| 重载 DNS（`panel/Reload-DNS.sgmodule`） | 点刷新后清 DNS 缓存并重载当前配置 |
 
 订阅面板需要在安装后在模块设置里填你自己的订阅链接，只存在你的设备上，绝不会写进仓库。详见 [`modules/README.md`](modules/README.md)。
 
@@ -113,7 +114,7 @@ Surge6-Rules/
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.6.0**。
+见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.7.0**。
 
 ## 免责声明
 
