@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.1] - 2026-11-14
+
+### Changed
+
+- Both profile templates (`surge.conf` and `surge-malaysia.conf`) now set `internet-test-url` to Huawei's connectivity check endpoint (`http://connectivitycheck.platform.hicloud.com/generate_204`) and `proxy-test-url` to Google's (`http://www.google.com/generate_204`), so Surge tests direct internet connectivity and proxy connectivity against separate endpoints. Rules unchanged (12 sets, 304 rules).
+
 ## [1.7.0] - 2026-11-13
 
 ### Added

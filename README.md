@@ -119,7 +119,7 @@ Surge6-Rules/
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.7.0**.
+See [CHANGELOG.md](CHANGELOG.md) for release history. The current release is **v1.7.1**.
 
 ## Disclaimer
 

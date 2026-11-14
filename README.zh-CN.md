@@ -114,7 +114,7 @@ Surge6-Rules/
 
 ## 更新日志
 
-见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.7.0**。
+见 [CHANGELOG.md](CHANGELOG.md)，当前版本 **v1.7.1**。
 
 ## 免责声明
 
